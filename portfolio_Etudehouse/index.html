@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="hyeon">
+    <meta name="description" content="포트폴리오, 플롯레이아웃">
+    <title>Portfolio ETUDE</title>
+    <!-- 폰트어썸 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- 머티리얼 아이콘 -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="./images/fav/etude32.svg">
+    <link rel="apple-touch-icon=precomposed" href="./images/fav/etude180.png">
+    <!-- 기본 코딩 JS 파일 -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+    <!-- 기본 코딩 CSS 파일 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.css">
+    <link rel="stylesheet" href="./css/etudehouse.css">
+</head>
+<body>
+    <div id="wrap">
+        <!-- Header -->
+        <header>
+            <div class="w1280 cf">
+                <!-- Logo, GNB -->
+                <div class="logo_gnb_left">
+                    <h1 class="logo"><a href="./index.html"><img src="./images/etude_logo.svg" alt="에뛰드로고"></a></h1>
+                    <nav>
+                        <ul class="gnb">
+                            <li><a href="#">PRODUCT</a></li>
+                            <li><a href="#">BRAND</a></li>
+                            <li><a href="#">MAKEUP LOOK</a></li>
+                            <li><a href="#">STORE</a></li>
+                            <li><a href="#">FOUNDATION FACTORY</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- /Logo, GNB -->
+                <!-- Search Btn -->
+                <div class="search">
+                    <a href="#"><img src="./images/search.png" alt="돋보기"></a>
+                </div>
+                <!-- /Search Btn -->
+                <!-- Hamburger MENU -->
+                    <input type="checkbox" id="menu_btn">
+                    <label for="menu_btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                    <!-- 햄버거 클릭시 보이는 GNB메뉴 -->
+                    <nav class="toggle_menu">
+                        <ul class="one_depth">
+                            <!-- 1depth MENU -->
+                            <li class="cf">
+                                <div><a href="#">BRAND</a></div>
+                                <!-- 2depth MENU -->
+                                <div class="sub_gnb" id="two_depth01">
+                                    <ul>
+                                        <li>
+                                            <a href="#">About ETUDE&nbsp;
+                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">뷰티즌&nbsp;
+                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">지구를 위한 활동&nbsp;
+                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- /2depth MENU -->
+                            </li>
+                            <li>
+                                <div><a href="#">PRODUCT</a></div>
+                                <!-- 2depth MENU -->
+                                <div class="sub_gnb" id="two_depth02">
+                                    <ul>
+                                        <li>
+                                            <a href="#">신제품 모아보기&nbsp;
+                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">카테고리&nbsp;</a>
+                                            <!-- 3depth MENU -->
+                                            <ul class="category_all">
+                                                <li>전체</li>
+                                                <li>아이</li>
+                                                <li>립</li>
+                                                <li>페이스</li>
+                                                <li>네일</li>
+                                                <li>스킨케어</li>
+                                                <li>마스크팩</li>
+                                                <li>클렌저</li>
+                                                <li>바디</li>
+                                                <li>헤어</li>
+                                                <li>롤</li>
+                                            </ul>
+                                            <!-- /3depth MENU -->
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- /2depth MENU -->
+                            </li>
+                            <li><div><a href="#">MAKEUP LOOK</a></div></li>
+                            <li><div><a href="#">FOUNDATION FACTORY</a></div></li>
+                            <li>
+                                <div><a href="#">@etudeofficial</a></div>
+                                <!-- 2depth MENU -->
+                                <div class="sub_gnb" id="two_depth03">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Instargram&nbsp;
+                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Tiktok&nbsp;
+                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- /2depth MENU -->
+                            </li>
+                            <li>
+                                <div><a href="#">STORE</a></div>
+                                <!-- 2depth MENU -->
+                                <div class="sub_gnb" id="two_depth04">
+                                    <ul>
+                                        <li>
+                                            <a href="#">온라인&nbsp;
+                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">오프라인&nbsp;
+                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- /2depth MENU -->
+                            </li>
+                            <li>
+                                <div><a href="#">CONTACT</a></div>
+                                <!-- 2depth MENU -->
+                                <div class="sub_gnb" id="two_depth05">
+                                    <ul>
+                                        <li>
+                                            <a href="#">공지사항&nbsp;
+                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">FAQ&nbsp;
+                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">고객문의&nbsp;
+                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- /2depth MENU -->
+                            </li>
+                            <li>
+                                <div><a href="#">MEMBERSHIP</a></div>
+                                <!-- 2depth MENU -->
+                                <div class="sub_gnb" id="two_depth06">
+                                    <ul>
+                                        <li>
+                                            <a href="#">핑크멤버십&nbsp;
+                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">뷰티포인트&nbsp;
+                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- /2depth MENU -->
+                            </li>
+                            <!-- /1depth MENU -->
+                        </ul>
+                    </nav>
+                    <!-- /햄버거 클릭시 보이는 GNB메뉴 -->
+                <!-- /Hamburger MENU -->
+            </div>
+            <!-- Search Bar -->
+            <section class="search_bar">
+                <div class="search_area">
+                    <h2 class="title">Search For Products</h2>
+                    <input type="search" name="searct" id="search" placeholder="#립케어 강자! 진저슈가">
+                    <img src="./images/icon-gnb-search.svg" alt="서치아이콘">
+                    <div>
+                        <ul>
+                            <li><span>TREND <h2><a href="#"></span> #TAG</h2></a></li>
+                            <li><a href="#">신제품 모아보기</a></li>
+                            <li><a href="#">진저슈가</a></li>
+                            <li><a href="#">플레이 컬러 아이즈</a></li>
+                            <li><a href="#">순정</a></li>
+                            <li><a href="#">비건</a></li>
+                            <li><a href="#">픽싱틴트</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                </div>
+            </section>
+            <!-- ImageText Deco -->
+            <div class="w1280 img_deco">
+                <h2>
+                    통통 튀는 그녀들의 Secret <br>
+                    <span>설리x크리스탈이 Pick한 제품은?</span>
+                </h2>
+                <p>
+                    <button><a href="#">지금 보러가기</a></button>
+                </p>
+            </div>
+            <!-- /ImageText Deco -->
+        </header>
+        <!-- /Header -->
+
+        <!-- Section CardBox -->
+        <section class="card_box">
+            <div class="w1280 cf">
+                <!-- 3단 CardBox -->
+                <div class="card_view">
+                    <h2>
+                        <img src="./images/tint.png" alt="립틴트">
+                        <h3>픽싱틴트</h3>
+                        <h4>물들듯 편안하게 <strong>픽싱</strong>되는<br>하이드로 매트 틴트</h4>
+                        <p>12,000원</p>
+                    </h2>
+                    <ul class="product_purchase">
+                        <li>
+                            <a href="#">
+                               <div>
+                                 <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                                 <i class="fa fa-heart-o no_mr" aria-hidden="true"></i>
+                               </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card_view">
+                    <h2>
+                        <img src="./images/eyeshadow.png" alt="아이섀도우">
+                        <h3>플레이 컬러 아이즈</h3>
+                        <h4>감성 필터 <strong>Y2k</strong> 메이크업</h4>
+                        <p>30,000원</p>
+                    </h2>
+                    <ul class="product_purchase">
+                        <li>
+                            <a href="#">
+                               <div>
+                                 <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                                 <i class="fa fa-heart-o no_mr" aria-hidden="true"></i>
+                               </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card_view no_mr">
+                    <h2>
+                        <img src="./images/black.png" alt="마스카라">
+                        <h3>컬픽스 마스카라</h3>
+                        <h4><strong>첫 화장</strong> 그대로! <br> 픽싱 한 올 한 올</h4>
+                        <p>15,000원</p>
+                    </h2>
+                    <ul class="product_purchase">
+                        <li>
+                            <a href="#">
+                               <div>
+                                 <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                                 <i class="fa fa-heart-o no_mr" aria-hidden="true"></i>
+                               </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /3단 CardBox -->
+                <!-- CardBox Text -->
+                <div class="card_box_info cf">
+                    <h2>프로모션 상품은 <span>조기 품절</span> 될 수 있습니다.</h2>
+                    <p>
+                        제품 더 보기 <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    </p>
+                </div>
+                <!-- /CardBox Text -->
+            </div>
+        </section>
+        <!-- /Section CardBox -->
+
+        <!-- Section ABOUTUS -->
+        <section class="about_us">
+            <div class="about_us_text cf w1280">
+                <h2 class="fadeUp">Make <br> Your <br> Playlist!</h2>
+                <article class="fadeUp">
+                    <img src="./images/model.png" alt="about_us">
+                </article>
+            </div>
+            <div class="line w1280"></div>
+            <div class="about_us_tab w1280">
+                <h2>About ETUDE</h2>
+                <div class="about_tab_menu cf">
+                    <input type="radio" id="about1" name="tab_menu" checked>
+                    <label for="about1" class="no_ml">WHO WE ARE</label>
+                    <input type="radio" id="about2" name="tab_menu">
+                    <label for="about2">WHO WE DO</label>
+                    <input type="radio" id="about3" name="tab_menu">
+                    <label for="about3">WHO WE WORK</label>
+                    <div class="circle"></div>
+                    <div class="line2"><p></p></div>
+                    <section class="content1">
+                        <p>
+                            <span>'ETUDE'</span>는 쇼팽이 작곡한 아름다운 연습곡의 이름에서 영감을 받아 탄생했어요. <br>
+                            연습곡이 예술적인 멜로디로 변화하듯, 자신만의 아름다움을 찾아 변화할 수 있도록 <br><br>
+
+                            <span>ETUDE</span>는 신나고 설레는 메이크업의 모든 순간을 <br>
+                            함께 하고 싶다는 뜻을 담고 있어요. <br><br>
+
+                            우리는 <span>ETUDE</span> 안에서 다양하고 생동감 넘치는 경험으로 <br>
+                            더 특별한 나를 표현할 수 있다고 믿어요! <br>
+                        </p>
+                    </section>
+                    <section class="content2">
+                        <p>
+                            <span>ETUDE</span>는 지구를 위해 환경 보호 활동을 실천하고 있어요. <br> <br>
+
+                            플라스틱 비닐 소재의 포장재 대신 <span>FSC</span> 인증을 받은 종이 포장재와 박스를 사용하여 <br>
+                            환경에 불필요하게 미치는 영향을 최소화하고자 노력합니다. <br> <br>
+
+                            피부에는 이롭고 환경 부담을 줄일 수 있는 <br> 
+                            지속가능한 제품과 배송을 위해 고객님들과 함께 행동할게요. <br>
+                        </p>
+                    </section>
+                    <section class="content3">
+                        <p>
+                            <span>Color!</span> &nbsp; 라이프 스타일의 다채로움 <br>
+                            <span>Pink!</span> &nbsp; 유니크한 핑크 <br>
+                            <span>Princess!</span> &nbsp; 멋지고 자신감 있는 주인공 <br>
+                            <span>Makeup Playlist!</span> &nbsp; 나만의 스타일을 찾는 즐거운 화장 문화
+                        </p>
+                    </section>
+                    <article class="content1">
+                        <img src="./images/promotion_poster.png" alt="포스터">
+                    </article>
+                    <article class="content2">
+                        <img src="./images/recycle.png" alt="환경보호">
+                    </article>
+                    <article class="content3">
+                        <img src="./images/about_us.png" alt="about_us">
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- /Section ABOUTUS -->
+        <!-- Article MOV -->
+        <article class="mov">
+            <h2 class="video">
+                <figure>
+                    <video muted loop id="etude_video" poster="./images/thumb.png">
+                        <source src="./images/etude_ad.mp4" type="video/mp4">
+                    </video>
+                </figure>
+                <button id="etude_btn">
+                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                </button>
+            </h2>
+        </article>
+        <!-- /Article MOV -->
+        <!-- Section Why -->
+        <section class="why">
+            <!-- 1. 스와이퍼 페이지 영역 -->
+            <div id="portfolio" class="w1280 cf">
+            <!-- A. 스와이퍼 최상위 구조 클래스 -->
+                <div class="swiper-container">
+                    <!-- B. 스와이퍼 될 Contents 부모 클래스 -->
+                    <div class="swiper-wrapper">
+                        <!-- C-1. 스와이퍼 될 Slider 각각 내용들 -->
+                        <div class="swiper-slide slide">
+                            <div class="p_mokup">
+                                <img src="./images/swipe_img01.png" alt="스와이퍼이미지01" width="282" height="570">
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide">
+                            <div class="p_mokup">
+                                <img src="./images/swipe_img02.png" alt="스와이퍼이미지02" width="282" height="570">
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide">
+                            <div class="p_mokup">
+                                <img src="./images/swipe_img03.png" alt="스와이퍼이미지03" width="282" height="570">
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide">
+                            <div class="p_mokup">
+                                <img src="./images/swipe_img04.png" alt="스와이퍼이미지04" width="282" height="570">
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide">
+                            <div class="p_mokup">
+                                <img src="./images/swipe_img05.png" alt="스와이퍼이미지05" width="282" height="570">
+                            </div>
+                        </div>
+                        <!-- /C-1. 스와이퍼 될 Slider 각각 내용들 -->
+                    </div>
+                </div>
+                <div class="swiper-text">
+                    <div>
+                        <h2>맞춤형 파운데이션 서비스 <br>
+                            <span>Customized Foundation Service</span>
+                        </h2>
+                        <p>파운데이션 팩토리는 나만의 퍼스널 컬러를 찾고 <br>
+                            그에 맞는 맞춤 파운데이션 제조 및 색조 제품을 <br>
+                            컨설팅 받아볼 수 있는 컬러 컨설팅 공간입니다.
+                        </p>
+                    </div>
+                    <table>
+                        <tr>
+                            <td><i class="fas fa-clock"></i></td>
+                            <td>소요 시간</td>
+                            <td>50분 · 30분</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-store"></i></td>
+                            <td>체험 장소</td>
+                            <td>신촌 플래그쉽 스토어</td>
+                        </tr>
+                        <tr>
+                            <td><i class="far fa-calendar-alt"></i></td>
+                            <td>예약 일시</td>
+                            <td>매월 26일 00시 예약 오픈&nbsp;&nbsp; <span>*다음 달 1일 ~ 31일</span></td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-microscope"></i></td>
+                            <td>체험 내용</td>
+                            <td>피부톤 진단 · 드레이핑 컬러 진단 · 100가지 컬러</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <!-- /Section Why -->
+        <!-- Section FAQ -->
+        <section class="faq_saying">
+            <div class="faq_people w1280">
+                <div class="faq_area">
+                    <h2>FAQ <span>더보기&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i></span></h2>
+                    <div class="faq_acordian">
+                        <h3 class="up">핑크 멤버십 혜택이 어떻게 되나요?</h3>
+                        <p>
+                            회원 혜택은 에뛰드 매장을 이용하시는 뷰티포인트 회원님께 본인 확인 후 제공되며, <br>
+                            에뛰드 상품에 한하여 적용됩니다. <span>(일부 품목 제외)</span> <br>
+                            * 에뛰드 매장 중 면세점 내 매장은 제외<br><br>
+                            
+                            ■ 상시 할인 10%로 진행 <br>
+                            ■ 생일 축하 쿠폰 40% <br>
+                            ■ 프로모션 상시 참여 <br>
+                            ■ 신규 회원 30% 쿠폰 <br><br>
+                            
+                            <a href="#">■ 멤버십 혜택 자세히 보기 (클릭)</a>
+                        </p>
+                    </div>
+                    <div class="faq_acordian">
+                        <h3 class="up">선물받은 제품의 교환/환불은 가능한가요?</h3>
+                        <p>
+                            제품의 교환/환불은 구매 이력 확인 또는 구매 영수증 확인 후 가능합니다. <br>
+                            선물받은 제품은 구매 이력이 확인되지 않으므로, 교환/환불이 어렵습니다. <br>
+                        </p>
+                    </div>
+                    <div class="faq_acordian">
+                        <h3 class="up">파운데이션 팩토리는 무엇인가요?</h3>
+                        <p>
+                            파운데이션 팩토리는 고객님의 피부에 맞는 파운데이션을 제작해드리는 서비스입니다. <br>
+                            한 달에 한 번 , 매월 26일(25일에서 26일로 넘어가는 자정12시)에 익월 1일부터 말일까지의 일정 예약 오픈됩니다. <br> <br>
+                            자세한 오픈 일정 및 예약 현황에 관련된 더욱 자세한 문의는 에뛰드 신촌 플래그쉽 스토어로 유선 문의 가능합니다. <br>
+                            <a href="#">■ 파운데이션 팩토리 예약 안내 페이지 바로가기</a> <br>
+                             ■ 에뛰드 신촌 플래그쉽 스토어 02-313-1916
+                    
+                        </p>
+                    </div>
+                    <div class="faq_acordian">
+                        <h3 class="up">뷰티포인트에 대해 궁금한 점이 있어요</h3>
+                        <p>
+                            뷰티포인트는 아모레퍼시픽 통합 멤버십 회원이 사용하실수 있는 포인트입니다. <br><br>
+                            아모레퍼시픽 통합 멤버십 회원이라면 뷰티포인트 사용처(www.beautypoint.co.kr 참조)어디서든지 사용 가능합니다. <br>
+                            뷰티포인트 상담실로 연락 주시면 자세한 상담이 가능합니다. <br><br>
+                            ■ 대표번호 : 080 - 023 - 5454 <br><br>
+                            <a href="#">■ 뷰티포인트 사이트 바로 가기(클릭)</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="beautizen w1280">
+                    <h2>ETUDE BEAUTIZEN</h2>
+                    <section class="beautizen_text">
+                        <article>
+                            <img src="./images/beautizen01.png" alt="뷰티즌1"> <span>프리따</span>
+                        </article>
+                        <p>
+                            안녕하세요 프리따입니다 🙂 <br>
+                            뷰티 유튜버의 길에 발을 내딛으신 여러분! <br>
+                            수년간 시행착오를 통해 겪은 저만의 노하우를 솔직담백하게 털어드리면서, <br>
+                            체계적으로, 빠르게 원하는 컨텐츠를 만들어낼 수 있도록 도와드릴게요! <br>
+                        </p>
+                    </section>
+                    <section class="beautizen_text">
+                        <article>
+                            <img src="./images/beautizen02.png" alt="뷰티즌2"> <span>윤이든</span>
+                        </article>
+                        <p>
+                            안녕하세요, 윤이든입니다. <br> 
+                            유튜브를 시작하고 채널 운영에 대한 고민이 많을 때<br> 
+                            뷰티즌을 하면서 제 채널의 부족함을 채울 수 있었어요. <br>
+                            다양한 컨텐츠에 도전할 수 있는 힘을 주고,같은 관심사를 가진 사람들을 <br>
+                            만날 수 있는 뷰티즌 활동을 통해 함께 성장해요! <br>
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <!-- /Section FAQ -->
+        <!-- Aside Banner -->
+        <aside class="banner">
+            <div class="banner_img">
+                <section class="w1280">
+                    <img src="./images/whatsnew-icon.png" alt="왓츠뉴아이콘" width="40" height="38">
+                    <h2>What's New?</h2>
+                    <p>주목! 신상이 궁금해? 설레는 신상으로 채워지는 작은 행복</p>
+                    <button>View More</button>
+                </section>
+            </div>
+        </aside>
+        <!-- /Aside Banner -->
+        <!-- Footer -->
+        <footer class="footer cf">
+            <div class="w1500">
+                <div class="left">
+                    <!-- Footer Notice -->
+                    <ul class="footer_notice">
+                        <li>공지</li>
+                        <li>[공지] 뷰티포인트 선물하기 서비스 종료 및 관련 이용약관 변경 안내</li>
+                    </ul>
+                    <ul>
+                        <li>공지사항&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</li>
+                        <li>이용약관&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</li>
+                        <li>전자공고&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</li>
+                        <li><span>개인정보처리방침</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</li>
+                        <li>영상정보처리기기 운영·관리 방침</li>
+                    </ul>
+                    <!-- /Footer Notice -->
+                    <!-- Footer Logo-->
+                    <dl class="footer_logo cf">
+                        <dt><img src="./images/etude_logo.svg" alt="에뛰드 로고"></dt>
+                        <div>
+                            <dd>㈜에뛰드 대표이사 : 이수연</dd>
+                            <dd>개인정보보호책임자 : 이수연</dd>
+                            <dd>사업자등록번호 : 135-81-05033</dd>
+                            <dd>주소 : 서울특별시 용산구 한강대로 100 (한강로 2가)</dd>
+                        </div>
+                    </dl>
+                </div>
+                <!-- /Footer Logo -->
+                <!-- Footer Info -->
+                <div class="footer_info">
+                    <!-- Site Map Info -->
+                    <section class="site_info cf">
+                        <!-- <a href="#">
+                            <p>Family Site &nbsp;</p>
+                            <span>
+                                <i class="fa fa-angle-up he" aria-hidden="true"></i>
+                            </span>
+                        </a>
+                        <a href="#" class="no_mr">
+                            <p>Site Map &nbsp;</p>
+                            <span>
+                                <i class="fa fa-angle-up" aria-hidden="true"></i>
+                            </span>
+                        </a> -->
+                        <!-- Map Button -->
+                        <input type="radio" name="mapInfo" id="map01">
+                        <label for="map01" class="cf">
+                            <p>Family Site</p>
+                            <i class="fa fa-angle-up he up" aria-hidden="true"></i>
+                        </label>
+                        <input type="radio" name="mapInfo" id="map02">
+                        <label for="map02" class="cf no_mr">
+                            <p>Site Map</p>
+                            <i class="fa fa-angle-up he up" aria-hidden="true"></i>
+                        </label>
+                        <!-- /Map Button -->
+
+                        <!-- Map depth Menu01 -->
+                        <div class="family_map_text">
+                            <ul>
+                                <li><a href="https://www.etude.com/int/en/index.php" target="_blank">ETUDE GLOBAL MALL</a></li>
+                                <li><a href="https://www.etudehouse.com/jp/ja/" target="_blank">JAPAN</a></li>
+                            </ul>
+                        </div>
+                        <!-- /Map depth Menu01 -->
+                        <!-- Map depth Menu02 -->
+                        <div class="site_map_text cf">
+                            <div class="left">
+                                <div class="depth_menu">
+                                    <h2>BRAND</h2>
+                                    <ul>
+                                        <li>About ETUDE</li>
+                                        <li>뷰티즌</li>
+                                        <li>지구를 위한 활동</li>
+                                    </ul>
+                                </div>
+                                <div class="depth_menu">
+                                    <h2>PRODUCT</h2>
+                                    <ul>
+                                        <li>전체보기</li>
+                                        <li style="width: 255px;">신제품</li>
+                                        <li style="width: 480px;">카테고리</li>
+                                        <li>
+                                            <ul class="all_category">
+                                                <li>아이</li>
+                                                <li>립</li>
+                                                <li>페이스</li>
+                                                <li>네일</li>
+                                                <li>스킨케어</li>
+                                                <li>마스크·팩</li>
+                                                <li>클렌저</li>
+                                                <li>바디</li>
+                                                <li>헤어</li>
+                                                <li>툴</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div><div class="depth_menu">
+                                    <h2>MAKEUP LOOK</h2>
+                                    <ul>
+                                        <li>메이크업룩</li>
+                                    </ul>
+                                </div>
+                                <div class="depth_menu">
+                                    <h2>FOUNDATION FACTORY</h2>
+                                    <ul>
+                                        <li>서비스안내</li>
+                                        <li>예약하기</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="depth_menu"  style="padding-bottom: 16px;">
+                                    <h2>@ETUDEOFFICIAL</h2>
+                                    <ul>
+                                        <li><a href="https://www.instagram.com/etudeofficial/">Instargram</a></li>
+                                        <li><a href="https://www.tiktok.com/@etude_official">Tiktok</a></li>
+                                    </ul>
+                                </div>
+                                <div class="depth_menu">
+                                    <h2>STORE</h2>
+                                    <ul>
+                                        <li>온라인</li>
+                                        <li>오프라인</li>
+                                    </ul>
+                                </div>
+                                <div class="depth_menu">
+                                    <h2>CONTACT</h2>
+                                    <ul>
+                                        <li style="width: 110px;">공지사항</li>
+                                        <li style="width: 110px;">FAQ</li>
+                                        <li style="width: 110px;">고객문의</li>
+                                    </ul>
+                                </div>
+                                <div class="depth_menu">
+                                    <h2>MEMBERSHIP</h2>
+                                    <ul>
+                                        <li>핑크멤버십</li>
+                                        <li>뷰티포인트</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Map depth Menu02 -->
+                    </section>
+                    <!-- /Site Map Info -->
+
+                    <!-- Contact Info -->
+                    <section class="contact_info">
+                        <table>
+                            <tr class="tr1">
+                                <td rowspan="2">CONTACT</td>
+                                <td><i class="fa fa-phone w60" aria-hidden="true"></i></td>
+                                <td class="fz">
+                                    제품문의 : 080-022-2285 <br>
+                                    고객문의 : 1544-5418
+                                </td>
+                                <td><i class="fa fa-clock-o w60" aria-hidden="true"></i></td>
+                                <td class="fz">
+                                    운영시간 : 평일 13:00 ~ 17:00 (주말 및 공휴일 휴무) <br>
+                                    점심 시간 : 12:00 ~ 13:00
+                                </td>
+                            </tr>
+                            <tr class="tr2">
+                                <td><i class="fa fa-envelope w60" aria-hidden="true"></i></td>
+                                <td colspan="4" class="fz">대표 이메일 : etude_master@etude.co.kr</td>
+                            </tr>
+                        </table>
+                    </section>
+                    <!-- /Contact Info -->
+                    
+                </div>
+                <!-- /Footer Info -->
+
+                
+                <!-- Copyright -->
+                <div class="copyright w1500">
+                    <dl>
+                        <dt>
+                            &copy; ETUDE CORPORATION. ALL RIGHTS RESERVED.
+                        </dt>
+                        <dd class="sns"><a href="#"><img src="./images/sns_facebook.png" alt="페이스북"></a></dd>
+                        <dd class="sns"><a href="#"><img src="./images/sns_twitter.png" alt="트위터"></a></dd>
+                        <dd class="sns"><a href="#"><img src="./images/sns_insta.png" alt="인스타그램"></a></dd>
+                        <dd class="sns no_mr"><a href="#"><img src="./images/sns_naver.png" alt="네이버"></a></dd>
+                    </dl>
+                </div>
+                <!-- /Copyright -->
+            </div>
+        </footer>
+        <!-- /Footer -->
+        <!-- GOTO TOP버튼 -->
+        <aside>
+            <div class="btn_top">
+                <a href="#" class="top">TOP</a>
+            </div>
+        </aside>
+    </div>
+<script src="./js/swiper-bundle.js"></script>
+<script src="./js/etude.js"></script>
+</body>
+</html>
